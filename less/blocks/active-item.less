@@ -1,0 +1,137 @@
+.active-item__wrapper {
+  .flex(row);
+  position: relative;
+  padding: 0 9%;
+  padding-top: 60px;
+  margin-bottom: 60px;
+}
+
+.active-item__photo {
+  background-color: @color-active-item;
+  width: 48%;
+}
+
+.active-item__inform {
+//  width: 380px;
+
+  width: 45%;
+  padding-top: 45px;
+  padding-left: 7%;
+}
+
+.active-item__image {
+  display: block;
+  width: 238px;
+  height: 420px;
+  margin: 0 auto;
+}
+
+.active-item__title {
+  position: absolute;
+  left: 54%;
+  margin: 0;
+//  margin-bottom: 15px;
+  font-family: "Oswald Bold";
+  font-size: 24px;
+  line-height: 30px;
+  color: @color-dark-grey;
+  text-transform: uppercase;
+}
+
+.active-item__code {
+  margin-bottom: 15px;
+  font-family: "Open Sans";
+  font-size: 10px;
+  line-height: 12px;
+  color: fade(@color-dark-grey, 70%);
+}
+
+.active-item__details {
+  display: none;
+}
+
+.active-item__desc {
+  margin-bottom: 10px;
+  font-family: "Open Sans Light";
+  font-size: 12px;
+  line-height: 16px;
+  color: @color-grey-desc;
+}
+
+@media @tablet-width {
+  .active-item__wrapper {
+//    .flex(row,space-between);
+    flex-wrap: wrap;
+    position: relative;
+    padding: 0 8%;
+    padding-top: 30px;
+    margin-bottom: 55px;
+  }
+  .active-item__photo {
+    position: relative;
+//    width: 398px;
+    width: 52%;
+  }
+  .active-item__inform {
+//    width: 380px;
+    width: 45%;
+    padding-left: 3%;
+    padding-top: 0;
+  }
+  .active-item__title {
+    order: -2;
+    position: relative;
+    left: auto;
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  .active-item__code {
+    font-size: 11px;
+    margin-bottom: 0px;
+  }
+  .active-item__details {
+    display: block;
+    margin: 0;
+    margin-bottom: 6px;
+    font-family: "Open Sans Bold";
+    font-size: 14px;
+    line-height: 18px;
+  }
+  
+  .active-item__image {
+    width: 200px;
+    height: 354px;
+    padding-top: 10px;
+  }
+}
+
+@media @mobile-width {
+  .active-item__wrapper{
+    .flex(column);
+    padding: 0%;
+    padding-top: 30px;
+    margin-bottom: 35px;
+  }
+  .active-item__photo{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 18px;
+    box-sizing:border-box;
+  }
+  .active-item__image {
+    width: 238px;
+    height: 420px;
+  }
+  .active-item__title{
+    width: 95%;
+    padding-left: 5%;
+  }
+  .active-item__inform {
+    width: 90%;
+    padding: 0 5%;
+  }
+  .active-item__details{
+    display: none;
+  }
+}

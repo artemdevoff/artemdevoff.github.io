@@ -1,0 +1,133 @@
+/// SOCIAL \\\
+.social {
+  .flex(row, center);
+  position: absolute;
+  width: 295px;
+  min-height: 94px;
+  height: 94px;
+  background: url(../img/share.png) no-repeat center;
+  opacity: 0;
+  .transition(opacity);
+}
+
+.social--tab {
+  display: none;
+}
+
+.social__links {
+  position: relative;
+  box-sizing: border-box;
+  width: 40px;
+  height: 40px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 13px;
+  background: none;
+  border: 1px solid @color-blue;
+  border-radius: 50%;
+  &::before {
+    .pseudo();
+    background-repeat: no-repeat;
+    background-position: center;
+    left: 50%;
+    top: 50%;
+  }
+}
+
+.social__fb::before {
+  background-image: url(../img/icon-sprites.png);
+  width: 8px;
+  height: 16px;
+  margin-left: -4px;
+  margin-top: -8px;
+  background-position: -76px -28px;
+}
+
+.social__tw::before {
+  background-image: url(../img/icon-sprites.png);
+  width: 17px;
+  height: 13px;
+  margin-left: -8.5px;
+  margin-top: -7px;
+  background-position: -16px -50px;
+}
+
+.social__pt::before {
+  background-image: url(../img/icon-sprites.png);
+  width: 16px;
+  height: 21px;
+  margin-left: -8px;
+  margin-top: -10.5px;
+  background-position: 0 -50px;
+}
+
+.social__yt::before {
+  background-image: url(../img/icon-sprites.png);
+  width: 18px;
+  height: 19px;
+  margin-left: -9px;
+  margin-top: -9.5px;
+  background-position: -58px -28px;
+}
+
+.social__btn {
+  margin-right: 0;
+  border: none;
+  cursor: pointer;
+  &::before {
+    background-image: url(../img/icon-sprites.png);
+    width: 28px;
+    height: 28px;
+    margin-left: -14px;
+    margin-top: -14px;
+    background-position: -58px 0;
+  }
+}
+
+@media @tablet-width {
+  .social--tab {
+    .flex(column, center, center);
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 72px;
+    min-height: 224px;
+    height: 4px;
+    background: none;
+    z-index: 2;
+  }
+  .social--desc {
+    display: none;
+  }
+  .social__links {
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 10px;
+    background: none;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media @mobile-width {
+  .social--tab {
+    display: none;
+  }
+  .social--desc {
+    .flex(row, space-between);
+    width: 218px;
+    height: 40px;
+    min-height: 40px;
+    position: relative;
+    background: transparent;
+    opacity: 1 !important;
+  }
+  .social__links {
+    margin-top: 0px;
+    margin-bottom: 0;
+  }
+  .social__btn {
+    display: none;
+  }
+}

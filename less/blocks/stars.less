@@ -1,0 +1,45 @@
+/// STARS \\\
+.stars {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  font-size: 0;
+  margin-bottom: 17px;
+}
+
+.stars__icon {
+  display: inline-block;
+  vertical-align: middle;
+  &:last-of-type {
+    margin-right: 17px;
+  }
+}
+
+.stars__share {
+  display: inline-block;
+  vertical-align: middle;
+  font-family: "Open Sans Bold";
+  font-size: 18px;
+  line-height: 24px;
+  color: @color-blue;
+  background: none;
+  cursor: pointer;
+}
+
+@media @tablet-width {
+  .stars {
+    margin-bottom: 15px;
+  }
+  .stars__share {
+    display: none;
+  }
+}
+
+@media @mobile-width {
+  .stars {
+    margin-bottom: 30px;
+  }
+  .stars__icon {
+    margin-bottom: 30px;
+  }
+}
