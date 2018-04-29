@@ -327,7 +327,7 @@ template {
 }
 @media (max-width: 350px) {
   .active-item__title {
-    font-size: 20px;
+    font-size: 22px;
   }
 }
 .price__item {
@@ -419,6 +419,7 @@ template {
   }
 }
 .stars {
+  width: 100%;
   display: inline-block;
   vertical-align: middle;
   position: relative;
@@ -687,20 +688,6 @@ template {
     margin: 0 auto;
     padding: 14px 0;
     border-radius: 25px;
-  }
-}
-@media (min-width: 1290px) {
-  .items__wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: stretch;
-  }
-  .items__product {
-    padding-right: 200px;
-  }
-  .items__product:nth-child(3n) {
-    padding-right: 0;
   }
 }
 .items {
