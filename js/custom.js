@@ -2,7 +2,7 @@
    buttonLeft = document.querySelector(".items__button--left"),
    buttonRight = document.querySelector(".items__button--right"),
    left = 0,
-
+   closeBtn = document.body, 
    socialBtn = document.querySelector(".social__btn"),
    social = document.querySelector(".social--desc"),
    share = document.querySelector(".stars__share");
@@ -30,7 +30,7 @@
    social.style.opacity = "1";
  }, false);
 
- socialBtn.addEventListener("click", function () {
+ closeBtn.addEventListener("click", function () {
 
    social.style.opacity = "0";
 
