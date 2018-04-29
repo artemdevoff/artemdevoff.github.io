@@ -407,6 +407,11 @@ template {
     margin-bottom: 15px;
   }
 }
+@media (max-width: 350px) {
+  .price--other {
+    width: 252px;
+  }
+}
 .stars {
   display: inline-block;
   vertical-align: middle;
@@ -748,7 +753,7 @@ template {
     padding: 0;
     position: relative;
     left: 0;
-    transition: all 1s ease-in;
+    transition: all 0.7s ease-in;
   }
   .items__title {
     margin-bottom: 20px;
@@ -781,5 +786,12 @@ template {
     right: 0;
     background-image: url(../img/icon-sprites.png);
     background-position: -29px 0;
+  }
+}
+@media (max-width: 350px) {
+  .items__photo {
+    width: 280px;
+    padding: 0 5%;
+    box-sizing: border-box;
   }
 }

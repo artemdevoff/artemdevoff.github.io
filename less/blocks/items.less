@@ -65,7 +65,7 @@
     padding: 0;
     position: relative;
     left: 0;
-    .transition(all, 1s);
+    .transition(all, 0.7s);
   }
   .items__title {
     margin-bottom: 20px;
@@ -98,5 +98,12 @@
       background-image: url(../img/icon-sprites.png);
       background-position: -29px 0;
     }
+  }
+}
+@media (max-width:350px){
+    .items__photo {
+    width: 280px;
+    padding: 0 5%;
+    box-sizing: border-box;
   }
 }
