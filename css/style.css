@@ -794,4 +794,7 @@ template {
     padding: 0 5%;
     box-sizing: border-box;
   }
+  .items__title {
+    font-size: 30px;
+  }
 }
