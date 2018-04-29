@@ -314,8 +314,8 @@ template {
     height: 420px;
   }
   .active-item__title {
-    width: 95%;
-    padding-left: 5%;
+    width: 100%;
+    padding-left: 0%;
   }
   .active-item__inform {
     width: 100%;
